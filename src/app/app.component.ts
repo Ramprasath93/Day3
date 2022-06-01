@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Book} from './book'
+import {Books} from './serverbook'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Day3';
+  title = 'Book-app';
+  booklists:Book[]=Books;
+
+  //Method declaration
+
+  onGetAuthorDetail(){
+
+    
+  }
+
 }
